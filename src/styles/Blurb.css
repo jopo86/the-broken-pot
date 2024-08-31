@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+}
+
+.blurb-container {
+    margin: 10vh auto 10vh auto;
+    text-align: center;
+    width: fit-content;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 20px;
+    transition-duration: 0.2s;
+}
+
+.blurb-container:hover {
+    background-color: rgba(71, 46, 14, 0.1);
+}
+
+.blurb-container > .react-link {
+    text-decoration: none;
+}
+
+.blurb-container  > .react-link > h1 {
+    font-family: 'Dancing Script';
+    color: rgb(71, 46, 14);
+    font-weight: 800;
+    font-size: 50px;
+}
+
+.blurb-container > .react-link > p {
+    font-family: 'Dancing Script';
+    color: rgb(71, 46, 14);
+    font-weight: 800;
+    font-size: 20px;
+}
