@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@font-face {
+    font-family: 'Firings';
+    src: url('../assets/fonts/Firings.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
 
 *,
 *::before,
@@ -10,7 +16,7 @@
 body {
     margin: 50px;
 
-    background-image: url("../assets/background.png");
+    background-image: url("../assets/images/background.png");
     background-size: 100% auto;
     background-repeat: repeat-y;
     background-position: top center;
@@ -25,10 +31,64 @@ body {
 }
 
 .pieces {
-    max-width: 575px;
+    max-width: 1200px;
     margin: 0 auto;
     margin-top: 40px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px 10px;
+}
+
+.gallery-navbar {
+    display: flex;
+    justify-content: center;
+    margin-top: 75px;
+    gap: 50px;
+}
+
+.gallery-navbar > h3 {
+    font-size: 40px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.gallery-navbar > h3:hover,
+.gallery-navbar > h3.active {
+    background-color: rgba(71, 46, 14, 0.1);
+}
+
+.gallery-navbar-normal {
+    color: rgb(71, 46, 14);
+    font-family: 'Dancing Script';
+}
+
+.gallery-navbar-firings {
+    font-family: 'Firings';
+}
+
+@media (max-width: 1400px) {
+    .pieces {
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 800px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .pieces {
+        grid-template-columns: 1fr 1fr;
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 800px) {
+    .pieces {
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 600px) {
+    .pieces {
+        max-width: 275px;
+    }
 }
