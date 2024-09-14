@@ -192,6 +192,7 @@ function GalleryPage() {
                     )
                     : (
                         <>
+                            <h3>Raku</h3>
                             <Piece 
                                 title="No Title"
                                 imgSrc={firings1} 
@@ -199,12 +200,13 @@ function GalleryPage() {
                             />
                             <Piece 
                                 title="No Title"
-                                imgSrc={firings2} 
+                                imgSrc={firings3} 
                                 caption="No caption" 
                             />
+                            <h3>Pit Fire</h3>
                             <Piece 
                                 title="No Title"
-                                imgSrc={firings3} 
+                                imgSrc={firings2} 
                                 caption="No caption" 
                             />
                             <Piece 
