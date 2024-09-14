@@ -51,6 +51,8 @@ body {
     padding: 10px 20px;
     border-radius: 20px;
     cursor: pointer;
+    text-align: center;
+    margin: auto 0;
 }
 
 .gallery-navbar > h3:hover,
@@ -64,6 +66,11 @@ body {
 }
 
 .gallery-navbar-firings {
+    color: rgb(71, 46, 14);
+    font-family: 'Dancing Script';
+}
+
+.gallery-navbar-firings .firings {
     font-family: 'Firings';
 }
 
@@ -79,16 +86,58 @@ body {
         grid-template-columns: 1fr 1fr;
         max-width: 500px;
     }
+
+    .gallery-page > h1 {
+        font-size: 65px;
+    }
+
+    .gallery-navbar > h3 {
+        font-size: 35px;
+    }
+
+    .gallery-navbar {
+        margin-top: 30px;
+    }
 }
 
 @media (max-width: 800px) {
     .pieces {
         max-width: 350px;
     }
+
+    .gallery-page > h1 {
+        font-size: 55px;
+    }
+
+    .gallery-navbar > h3 {
+        font-size: 28px;
+        padding: 7px 13px;
+        border-radius: 15px;
+    }
+
+    .gallery-navbar {
+        margin-top: 20px;
+        gap: 15px;
+    }
 }
 
 @media (max-width: 600px) {
     .pieces {
         max-width: 275px;
+    }
+
+    .gallery-page > h1 {
+        font-size: 45px;
+    }
+
+    .gallery-navbar > h3 {
+        font-size: 24px;
+        padding: 5px 11px;
+        border-radius: 10px;
+    }
+
+    .gallery-navbar {
+        margin-top: 15px;
+        gap: 10px;
     }
 }

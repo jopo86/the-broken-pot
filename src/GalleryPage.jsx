@@ -54,7 +54,7 @@ function GalleryPage() {
 
                         setActive("normal");
                     }
-                }>Normal</h3>
+                }>My Work</h3>
                 <h3 className="gallery-navbar-firings" onClick={
                     () => {
                         if (document.querySelector(".gallery-navbar-firings").classList.contains("active")) {
@@ -66,7 +66,7 @@ function GalleryPage() {
 
                         setActive("firings");
                     }
-                }>Firings</h3>
+                }>Alternate<br /><span className="firings">Firings</span></h3>
             </div>
             <div className="pieces">
                 {
